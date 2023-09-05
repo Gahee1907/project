@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="home.css">
+    </head>
+</html>
+<body>
+    <div>
+        <input class="upbtn" type="button" value="Top" onclick="clickme()"></div>
+        <script>
+          function clickme() {
+            window.scrollTo({top:0, left:0, behavior:"smooth"});
+          }
+        </script>
+    <header>
+        <div class="inner">
+            <a class="logo" href="index.html"><img src="logo.png"></a>
+            <ul class="topmenu">
+                <li>로그인</li>
+                <li>회원가입</li>
+                <li>장바구니(0)</li>
+                <li>Q&A</li>
+             </ul>
+             <div class="search">
+                <p>Kodak Apparel</p>
+            </div>
+             <ul class="menu">
+                <li>리뷰</li>
+                <li>기획전</li>
+                <li>이벤트</li>
+             </ul>
+            <ul class="downmenu">
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="#">CAMERA</a></li>
+                <li><a href="#">LOOKBOOK</a></li>
+                <li><a href="#">KODAK STYLE</a></li>
+                <li><a href="#">OUTLET</a></li>
+                <li><a href="#">Customer Service</a></li>
+            </ul>
+        </div>
+    </header>
+    <div style="overflow: hidden">
+        <div class="main">
+            <div class="slide">
+                <img src="main1.jpg">
+            </div>
+            <div class="slide">
+                <img src="main2.jpg">
+            </div>
+            <div class="slide">
+                <img src="main3.jpg">
+            </div>
+        </div>
+    </div>
+    <script>
+        var t = document.querySelector('btt2');
+        t.addEventListener('click',function(){
+            document.querySelector('.main').style.transform = 'translate(-100vw)';
+        })
+    </script>
+
+    <div class="best_item">
+        <p class="font2">베스트 아이템</p>
+        <p class="font3">BEST ITEM</p>
+        <ul class="item">
+            <li>전체</li>
+            <li>아우터</li>
+            <li>상의</li>
+            <li>하의</li>
+        </ul>
+        <div class="container">
+            <img src="best_img1.PNG">
+            <img src="best_img2.PNG">
+            <img src="best_img3.PNG">
+            <img src="best_img4.PNG">
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="area">
+            <p class="font4"><i>Hilight Brands</i></p>
+            <p class="font5">주식회사 하이라이트브랜즈</p>
+            <ul>
+                <li>CEO.Jun Kwon Lee</li>
+                <li>Business License No. 788-81-01239 [사업자정보확인]</li>
+                <li>Mail Order Business Registration. No. 2019-성남분당B-0523</li>
+                <li>Address. 801 PDC Building A-Dong 8F, 242, Pangyo-ro, Bundang-gu, Seongnam-si,
+                Gyeonggi, Korea</li>
+            </ul>
+            <br>
+            <ul>
+                <li>Hilight Brands is a division within Modern Works.</li>
+                <li>The Kodak trademark, logo and trade dress are</li>
+                <li>used by Modern Works under license from Eastman Kodak Company.</li>
+            </ul>
+            <br>
+            ⓒ 2023 Hilight Brands.
+        </div>
+        <div class="area">
+            <ul>
+                <li>Term of Use</li>
+                <li>Privacy Policy</li>
+                <li>Order Tracking</li>
+                <li>Notice</li>
+                <li>Q&A</li>
+                <li>인재채용</li>
+            </ul>
+            <img src="kakao.png">
+            <img src="facebook.png">
+            <img src="instargram.png">
+        </div>
+        <div class="area">
+            <ul>
+                <li>CS Center</li>
+                <li>Mon - Fri (10:00 - 17:00)</li>
+                <li>문의전용 : support@hibs.co.kr</li>
+                <li>마케팅제휴 : marketing@hibs.co.kr</li>
+            </ul>
+        </div>
+        <div class="area">
+            <ul>
+                <li>반품 & 교환</li>
+                <li>반품배송지 : 경기도 안산시 단원구 시화호수로 835 로지즈밸리 3층</li>
+            </ul>
+            <br>
+            <ul>
+                <li>계좌안내</li>
+                <li>계좌번호 : 하나은행 439-910024-02604</li>
+                <li>예금주 : 주식회사 하이라이트브랜즈</li>
+            </ul>
+            <br>
+            <ul>
+                <li>매장안내</li>
+                <li>전국 매장정보</li>
+                <li>대리점 입점 문의 : hyoungwon.son@hibs.co.kr(010-2515-1632)</li>
+            </ul>
+        </div>
+    </div>
+</body>

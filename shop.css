@@ -1,0 +1,217 @@
+* {
+    margin: 0px; padding: 0px;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.upbtn {
+    top: 90%; left: 96%; width: 45px; height: 45px;
+    border-radius: 80%; background-color: #ffffff;
+    border: black 3px solid;
+    position: fixed; z-index: 2;
+}
+header {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
+header .inner {
+    width: 1500px; height: 180px;
+    margin: 20px auto 0 ;
+}
+header .inner a {
+    display: flex;
+    margin: 0 auto;
+    width: 70px; height: 64px;
+}
+
+
+header .inner .topmenu {
+    display: flex;
+    width: 270px;
+    height: 23px;
+    margin-left: auto;
+}
+header .inner .topmenu li {
+    margin: 0 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+}
+header .inner .search {
+    margin-left: auto;
+    background-color:rgb(241, 237, 237);
+    width: 170px; height: 29px;
+    border-radius: 30px;
+}
+header .inner .search p {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px;
+    text-align: center;
+    color: rgb(142, 138, 138)
+}
+
+header .inner .menu {
+    display: flex;
+    justify-content: flex-end;
+}
+header .inner .menu li {
+    margin: 5px;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+header .inner .downmenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+header .inner .downmenu  li a{
+    width: 130px; height: 24px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+header .inner .downmenu li a:hover {
+    border-bottom: 3px solid black;
+}
+
+.shop_menu {
+    width: 100%; height: 40px;
+    padding-top: 200px;
+}
+.shop_menu ul {
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+}
+.shop_menu li {
+    float: left;
+    margin: 10px 20px;
+}
+.shop_menu a {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+.shop_menu a:hover {
+    color: red;
+}
+
+.main {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+.main>p {
+    font-size: 33px;
+    font-weight: 600;
+    margin-top: 40px ;
+}
+.font {
+    width: 230px;
+    margin: 10px auto;
+    font-size: 16px;
+    font-weight: 500;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: rgb(199, 197, 197);
+}
+.main .main_best {
+    position: relative;
+    z-index: -1;
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+}
+.main .main_best .item {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    text-align: center;
+    justify-content: center;
+}
+.main .main_best article img:nth-child(1) {
+    width:200px; height: 200px;
+}
+.main .item article img {
+    margin-top: 20px;
+    width:20px; height: 20px;
+}
+.font1 {
+    font-size: 12px;
+}
+.font2 {
+    font-size: 11px;
+}
+.font3 {
+    font-size: 12px;
+    font-weight: 600;
+}
+.main .main_item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1400px;
+    margin: 0 auto;
+}
+.main .main_item .item {
+    display: flex;
+    width: 280px;
+    text-align: center;
+    justify-content: center;
+}
+.main .main_item article img:nth-child(1) {
+    width:280px; height: 280px;
+}
+.main ul {
+    width: 230px;
+    height: 50px;
+    margin: 70px auto 0px;
+}
+.main ul li {
+    float: left;
+    margin: 0 10px;
+    font-size: 13px; font-weight: 600;
+}
+.main ul li a{
+    color: gray;
+}
+.main ul li a:hover { color: black; border-bottom: 2px solid black;}
+
+.bottom {
+    width: 100%; height: 380px;
+    padding: 55px 148px;
+    border-top: 1px solid black;
+    background-color: rgb(246, 244, 244);
+    font-size: 10.6px; font-weight: bolder;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: flex;
+}
+.bottom .area {
+    padding: 0 17px;
+}
+.bottom img {
+    margin-top: 20px;
+    width: 29px;
+    height: 29px;
+}
+.bottom ul li {
+    margin: 7px 0;
+}
+.font4 {
+    width: 300px; padding: 5px 0;
+    font-size: 21px; font-weight: bolder;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.font5 {
+    width: 500px;
+    font-size: 11px;
+    margin-bottom: 30px;
+}
