@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home</title>
-        <link rel="stylesheet" type="text/css" href="home.css">
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="login.css">
     </head>
 </html>
 <body>
-    <div>
-        <input class="upbtn" type="button" value="Top" onclick="clickme()"></div>
-        <script>
-          function clickme() {
+    <input class="upbtn" type="button" value="Top" onclick="clickme()"></div>
+    <script>
+        function clickme() {
             window.scrollTo({top:0, left:0, behavior:"smooth"});
           }
+        </script>
+        <script>
+            function mclick() {
+                var m;
+                m = document.getElementById("like");
+                m.style.backgroundimge="url('heart2.png')";
+            }
         </script>
     <header>
         <div class="inner">
@@ -40,41 +46,39 @@
             </ul>
         </div>
     </header>
-    <div style="overflow: hidden">
-        <div class="main">
-            <div class="slide">
-                <img src="main1.jpg">
+    <div class="main">
+         <div class="login">
+            Login
+            <div class="id">
+                <input type="emil" name="" id="" placeholder="E-mail">
             </div>
-            <div class="slide">
-                <img src="main2.jpg">
+            <div class="pw">
+                <input type="password" name="" id="" placeholder="Password">
             </div>
-            <div class="slide">
-                <img src="main3.jpg">
+            <div class="login_btn">
+                <input type="submit" value="로그인">
             </div>
-        </div>
-    </div>
-    <script>
-        var t = document.querySelector('btt2');
-        t.addEventListener('click',function(){
-            document.querySelector('.main').style.transform = 'translate(-100vw)';
-        })
-    </script>
-
-    <div class="best_item">
-        <p class="font2">베스트 아이템</p>
-        <p class="font3">BEST ITEM</p>
-        <ul class="item">
-            <li>전체</li>
-            <li>아우터</li>
-            <li>상의</li>
-            <li>하의</li>
-        </ul>
-        <div class="container">
-            <img src="best_img1.PNG">
-            <img src="best_img2.PNG">
-            <img src="best_img3.PNG">
-            <img src="best_img4.PNG">
-        </div>
+            <p>
+                아직 회원이 아니신가요?가입 후 쿠폰 및 포인트 적립 등의 다양한 혜택을 받아보세요.
+            </p>
+            <div class="sns_login">
+                <a href="#"><img src="kakao_login.png"></a>
+                <a href="#"><img src="naver_login.png"></a>
+                <a href="#"><img src="facebook_login.png"></a>
+                <a href="#"><img  src="google_login.png"></a>
+            </div>
+            <div class="login_menu">
+                <ul>
+                    <li>비회원 주문조회</li>
+                    <li>|</li>
+                    <li>아이디찾기</li>
+                    <li>|</li>
+                    <li>비밀번호찾기</li>
+                    <li>|</li>
+                    <li>회원가입</li>
+                </ul>
+            </div>
+         </div> 
     </div>
     <div class="bottom">
         <div class="area">
@@ -105,9 +109,9 @@
                 <li>Q&A</li>
                 <li>인재채용</li>
             </ul>
-            <img src="kakao.png">
-            <img src="facebook.png">
-            <img src="instargram.png">
+            <a href="https://pf.kakao.com/_xgSbxbxb"><img src="kakao.png"></a>
+            <a href="https://www.facebook.com/kodakstyle.kr"><img src="facebook.png"></a>
+            <a href="https://www.instagram.com/kodakstyle_kr/"><img src="instargram.png"></a>
         </div>
         <div class="area">
             <ul>

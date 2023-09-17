@@ -84,120 +84,61 @@ header .inner .downmenu  li a{
 }
 header .inner .downmenu li a:hover { color: red;}
 
-.shop_menu {
-    width: 100%; height: 38px;
-    padding-top: 195px;
-}
-.shop_menu ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: lightgray;
-}
-.shop_menu li {
-    float: left;
-    margin: 10px 17px;
-}
-.shop_menu a {
-    font-size: 14px;
-    font-weight: 600;
-    color: black;
-    text-align: center;
-}
-.shop_menu a:hover { color: red;}
-
 .main {
-    width: 100%;
-    text-align: center;
-    padding-top: 50px;
+    width: 100%; height: 850px;
+    padding-top: 200px;
 }
-.main>p {
-    font-size: 33px;
+.main .login {
+    margin: 70px auto 0;
+    width: 500px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+.main .id input{
+    width: 380px; height: 40px;
+    margin-top: 25px;
+    padding: 0 20px;
+}
+.main .pw input {
+    width: 380px; height: 40px;
+    padding: 0 20px;
+    margin-top: 6px;
+}
+.main .login_btn {
+    margin-top: 9px;
+}
+.main .login_btn  input{ 
+    width: 380px; height: 48px;
+    border: 0;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-size: 15px;
     font-weight: 600;
-    margin-top: 40px ;
 }
-.font {
-    width: 230px;
-    margin: 10px auto;
-    font-size: 16px;
-    font-weight: 500;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+.main p {
+    margin-top: 7px;
     text-align: center;
-    color: rgb(199, 197, 197);
+    font-size: 10px;
 }
-.main .main_best {
-    position: relative;
-    z-index: -1;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
+.main .login .sns_login {
+    margin: 30px auto;
 }
-.main .main_best .item {
-    min-height: 100px;
-    flex-basis: 100px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    border: 1px solid lightgray;
+.main .login .sns_login img{
+    width: 185px; height: 36px;
 }
-
-
-.main .main_best article img:nth-child(1) {
-    width:200px; height: 200px;
-}
-.main .item article img {
-    margin: 30px 0 5px;
-    width:20px; height: 20px;
-}
-.font1 {
-    font-size: 12px; font-weight: 600;
-}
-.font2 {
-    font-size: 11px;
-}
-.font3 {
+.main .login .login_menu {
+    width: 390px;
+    margin: 30px auto;
     font-size: 12px;
-    font-weight: 600;
+    border-top: 1px solid black;
 }
-
-.main .main_item{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    border: 1px solid lightgray;
-}
-.main .main_item .item {
-    min-height: 100px;
-    flex-basis: 13.5%;
-    flex-shrink: 2;
-    flex-grow: 1;
-    border-left: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
-}
-@media screen and (max-width: 1023px) {
-    .item{flex-basis: 49%;}
-}
-@media screen and (max-width: 700px){
-    .item{flex-basis: 100%;}
-}
-
-
-.main .main_item article img:nth-child(1) {
-    width:280px; height: 280px;
-}
-.main ul {
-    width: 230px;
-    height: 50px;
-    margin: 70px auto 0px;
-}
-.main ul li {
+.main .login .login_menu li {
     float: left;
-    margin: 0 10px;
-    font-size: 13px; font-weight: 600;
+    padding: 17px 3px;
 }
-.main ul li a{
-    color: gray;
-}
-.main ul li a:hover { color: black; border-bottom: 2px solid black;}
 
 .bottom {
     width: 100%;
@@ -208,7 +149,6 @@ header .inner .downmenu li a:hover { color: red;}
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     display: flex;
     flex-wrap: wrap;
-    gap: 2%;
 }
 .bottom .area {
     flex-basis: 100px;
