@@ -5,6 +5,7 @@
 ul {
     list-style-type: none;
 }
+li {list-style: none;}
 a {
     text-decoration: none;
 }
@@ -18,6 +19,7 @@ a {
 header {
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 header .inner {
     width: 1400px; height: 175px;
@@ -81,14 +83,17 @@ header .inner .downmenu  li a{
 }
 header .inner .downmenu li a:hover { color: black;}
 
-.main {
-    width: 300vw;
-    transition: transform 0.5s;
+
+.gallery_wrap {
+    width: 100%; max-width: 2000px; 
+    margin: 0 auto;
 }
-.slide {
-    float: left; width: 100vw;
+.slide_gallery li img { width: 100%; height: 750px;}
+.bx-wrapper {
+    border: 0; background: #fbfbfb; 
+    box-shadow: none;
 }
-.slide img {width: 100%; height: 750px;}
+
 
 .best_item {
     width: 100%; height: 600px;

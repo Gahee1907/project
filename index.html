@@ -3,6 +3,16 @@
     <head>
         <title>Home</title>
         <link rel="stylesheet" type="text/css" href="home.css">
+        <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
+        <script src="jquery.bxslider.min.js"></script>
+        <link rel="stylesheet" href="jquery.bxslider.min.css">
+
+        <style>
+            .bx-wrapper {
+             border: 0; background: #fbfbfb; 
+             box-shadow: none;
+            }
+        </style>
     </head>
 </html>
 <body>
@@ -13,6 +23,7 @@
             window.scrollTo({top:0, left:0, behavior:"smooth"});
           }
         </script>
+
     <header>
         <div class="inner">
             <a class="logo" href="index.html"><img src="logo.png"></a>
@@ -40,25 +51,30 @@
             </ul>
         </div>
     </header>
-    <div style="overflow: hidden">
-        <div class="main">
-            <div class="slide">
-                <img src="main1.jpg">
-            </div>
-            <div class="slide">
-                <img src="main2.jpg">
-            </div>
-            <div class="slide">
-                <img src="main3.jpg">
-            </div>
-        </div>
+
+    <div class="gallery_wrap">
+        <ul class="slide_gallery">
+            <li><img src="main1.jpg"></li>
+            <li><img src="main2.jpg"></li>
+            <li><img src="main4.jpg"></li>
+            <li><img src="main3.jpg"></li>
+            <li><img src="main5.jpg"></li>
+        </ul>
     </div>
+
     <script>
-        var t = document.querySelector('btt2');
-        t.addEventListener('click',function(){
-            document.querySelector('.main').style.transform = 'translate(-100vw)';
-        })
+        $(function() {
+            $('.slide_gallery').bxSlider({
+                auto: true,
+                autoControls: true,
+                stopAutoOnClick: true,
+                pager: true,
+                autoControls: true
+            });
+        });
     </script>
+
+
 
     <div class="best_item">
         <p class="font2">베스트 아이템</p>
@@ -76,6 +92,7 @@
             <img src="best_img4.PNG">
         </div>
     </div>
+
     <div class="bottom">
         <div class="area">
             <p class="font4"><i>Hilight Brands</i></p>
