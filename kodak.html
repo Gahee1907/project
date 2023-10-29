@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>(KODAK)</title>
+        <link rel="stylesheet" type="text/css" href="kodak.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    </head>
+</html>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    
+    <div>
+        <input class="upbtn" type="button" value="Top" onclick="clickme()"></div>
+        <script>
+          function clickme() {
+            window.scrollTo({top:0, left:0, behavior:"smooth"});
+          }
+        </script>
+
+    <header>
+        <div class="inner">
+            <a class="logo" href="index.html"><img src="logo.png"></a>
+            <ul class="topmenu">
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">장바구니</a></li>
+                <li><a href="#">Q&A</a></li>
+             </ul>
+             <div class="search">
+                <input type="search" name="" id="" placeholder="Kodak Apparel">
+            </div>
+             <ul class="menu">
+                <li>리뷰</li>
+                <li>기획전</li>
+                <li>이벤트</li>
+             </ul>
+            <ul class="downmenu">
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="camera.html">CAMERA</a></li>
+                <li><a href="#">LOOKBOOK</a></li>
+                <li><a href="#">KODAK STYLE</a></li>
+                <li><a href="#">OUTLET</a></li>
+                <li><a href="#">Customer Service</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        $(function(){
+            var $header = $('header');
+            var $page = $('.empty');
+            var $window = $(window);
+            var pageOffsetTop = $page.offset().top;
+            
+            $window.resize(function(){
+                pageOffsetTop = $page.offset().top;
+            });
+            
+            $window.on('scroll', function(){
+                var scrolled = $window.scrollTop() >= pageOffsetTop;
+                $header.toggleClass('down', scrolled);
+            });
+            });
+    </script>
+
+    <div class="main">
+        <div id="main_slider">
+          <div><img src="main1.jpg"></div>
+          <div><img src="main2.jpg"></div>
+          <div><img src="main4.jpg"></div>
+          <div><img src="main3.jpg"></div>
+          <div><img src="main5.jpg"></div>
+        </div>
+    </div>
+    <script>
+      $(function(){
+        $('#main_slider').slick({
+          slide: 'div',
+                    infinite : true, 	 
+                    slidesToShow : 1,
+                    slidesToScroll : 1,	
+                    speed : 100,
+                    dots : true,
+                    autoplay : true,
+                    autoplaySpeed : 10000,
+                    pauseOnHover : true,
+                    vertical : false,
+                    dotsClass : "slick-dots", 	
+                    draggable : true
+                });
+              })
+    </script>
+
+    <div class="empty"></div>
+
+    <div class="itembox">
+        <p class="font2">베스트 아이템</p>
+        <p class="font3">BEST ITEM</p>
+        <ul class="item">
+            <li>전체</li>
+            <li>아우터</li>
+            <li>상의</li>
+            <li>하의</li>
+        </ul>
+        <div class="slide">
+            <div class="item_slider">
+                <div>
+                    <img src="best_img1.PNG"
+                    onmouseover="this.src='best_img1-1.PNG'"onmouseout="this.src='best_img1.PNG'">
+                    <p class="font4">레터링 릴렉스핏 볼캡 BLACK</p>
+                    <p class="font5">199,000원</p>
+                </div>
+                <div>
+                    <img src="best_img2.PNG"
+                    onmouseover="this.src='best_img2-1.PNG'"onmouseout="this.src='best_img2.PNG'">
+                    <p class="font4">브라우니 바시티 자켓 NAVY</p>
+                    <p class="font5">229,000원</p>
+                </div>
+                <div>
+                    <img src="best_img3.PNG"
+                    onmouseover="this.src='best_img3-1.PNG'"onmouseout="this.src='best_img3.PNG'">
+                    <p class="font4">케이 마이크로플리스 안감형 자켓 BLACK</p>
+                    <p class="font5">219,000원</p>
+                </div>
+                <div>
+                    <img src="best_img4.PNG"
+                    onmouseover="this.src='best_img4-1.PNG'"onmouseout="this.src='best_img4.PNG'">
+                    <p class="font4">에센셜 시그니처 로고 맨투맨 MELANGE GRAY</p>
+                    <p class="font5">99,000원</p>
+                </div>
+                <div>
+                    <img src="best_img5.PNG"
+                    onmouseover="this.src='best_img5-1.PNG'"onmouseout="this.src='best_img5.PNG'">
+                    <p class="font4">트립 경량 덕다운 타켓 우먼 YELLOW</p>
+                    <p class="font5">259,000원</p>
+                </div>
+                <div>
+                    <img src="best_img6.PNG"
+                    onmouseover="this.src='best_img6-1.PNG'"onmouseout="this.src='best_img6.PNG'">
+                    <p class="font4">라지 보스턴백 PURPLE</p>
+                    <p class="font5">159,000원</p>
+                </div>
+                <div>
+                    <img src="best_img7.PNG"
+                    onmouseover="this.src='best_img7-1.PNG'"onmouseout="this.src='best_img7.PNG'">
+                    <p class="font4">레인보우 빅로고 맨투맨 NAVY</p>
+                    <p class="font5">99,000원</p>
+                </div>
+            </div>
+        </div>
+        <div class="view">
+            <a href="shop.html">VIEW MORE</a> 
+        </div>
+    </div>
+    <script>
+        $(function(){
+          $('.item_slider').slick({
+            slide: 'div',
+                      centerPadding: '40px', 
+                      slidesToShow : 4,
+                      slidesToScroll : 1,	
+                      speed : 300,
+                      arrows : true,
+                      autoplay : true,
+                      autoplaySpeed : 4000,
+                      pauseOnHover : true,
+                      vertical : false,
+                      prevArrow : "<button type='button' class='slick-prev'>Previous</button>",
+                      nextArrow : "<button type='button' class='slick-next'>Next</button>",
+                      dotsClass : "slick-dots", 	
+                      draggable : true, 
+                      responsive: [
+                          {  
+                              breakpoint: 960,
+                              settings: {
+                                  slidesToShow:2
+                              } 
+                          },
+                          { 
+                              breakpoint: 768,
+                              settings: {	
+                                  slidesToShow:3
+                              } 
+                          }
+                      ]
+      
+                  });
+                })
+    </script>
+
+    <div class="empty"></div>
+
+    <div class="issue">
+        <p class="font2">브랜드 이슈</p>
+        <p class="font3">BRAND ISSUE</p>
+        <ul>
+            <li>
+                <img src="issue1.PNG">
+                <p>KODAK SET-UP ITEM</p>
+                <p>코디 걱정없는 셋업 아이템</p>
+            </li>
+            <li>
+                <img src="issue2.PNG">
+                <p>코닥 키즈 아이템</p>
+                <p>코닥의 아이코닉한 컬러감과 세련된 디자인</p>
+            </li>
+        </ul>
+    </div>
+            
+    <div class="itembox">
+        <p class="font2">신상품</p>
+        <p class="font3">NEW ARRIVALS</p>
+        <div class="slide">
+            <div class="item_slider">
+                <div>
+                    <img src="new1.PNG">
+                    <p class="font4">트립 스트레이트 패딩 팬츠 BLACK</p>
+                    <p class="font5">199,000원</p>
+                </div>
+                <div>
+                    <img src="new2.PNG">
+                    <p class="font4">트립 스트레이트 패딩 팬츠 KHAKI</p>
+                    <p class="font5">199,000원</p>
+                </div>
+                <div>
+                    <img src="new3.PNG">
+                    <p class="font4">트립 스노우워싱 기모 후드티셔츠 NAVY</p>
+                    <p class="font5">149,000원</p>
+                </div>
+                <div>
+                    <img src="new4.PNG">
+                    <p class="font4">트립 스노우워싱 기모 후드티셔츠 SKYBLUE</p>
+                    <p class="font5">149,000원</p>
+                </div>
+                <div>
+                    <img src="new5.PNG">
+                    <p class="font4">컬러플러스 비니 L.PURPLE</p>
+                    <p class="font5">39,000원</p>
+                </div>
+                <div>
+                    <img src="new6.PNG">
+                    <p class="font4">트립 울 플리스 베스트 KHAKI</p>
+                    <p class="font5">199,000원</p>     
+                </div>
+                <div>
+                    <img src="new7.PNG">
+                    <p class="font4">트립 울 플리스 베스트 BEIGE</p>
+                    <p class="font5">199,000원</p>
+                </div>
+                <div>
+                    <img src="new8.PNG">
+                    <p class="font4">브라우니 마이크로플리스 반집업 맨투맨ORANGE</p>
+                    <p class="font5">129,000원</p>
+                </div>
+                <div>
+                    <img src="new9.PNG">
+                    <p class="font4">브라우니 마이크로플리스 반집업 맨투맨 NAVY</p>
+                    <p class="font5">129,000원</p>
+                </div>
+                <div>
+                    <img src="new10.PNG">
+                    <p class="font4">브라우니 마이크로플리스 반집업 맨투맨 MUSTARD</p>
+                    <p class="font5">129,000원</p>
+                </div>
+                <div>
+                    <img src="new11.PNG">
+                    <p class="font4">가든 라벨 핸드워머 BROWN</p>
+                    <p class="font5">45,000원</p>
+                </div>
+                <div>
+                    <img src="new12.PNG">
+                    <p class="font4">가든 라벨 핸드워머 IVORY</p>
+                    <p class="font5">45,000원</p>
+                </div>
+            </div>
+        </div>
+        <div class="view">
+            <a href="shop.html">VIEW MORE</a> 
+        </div>
+    </div>
+    
+    <script>
+        let observer = new IntersectionObserver((e)=>{
+            e.forEach((박스)=>{
+                if(박스.isIntersecting){
+                    박스.target.style.opacity = 1;
+                }else {
+                    박스.target.style.opacity = 0;                  }
+            })
+        })
+
+        let div = document.querySelectorAll('div')
+        observer.observe(div[2])
+        observer.observe(div[3])
+        observer.observe(div[4])
+        observer.observe(div[5])
+        observer.observe(div[6])
+    </script>
+
+
+
+    <div class="bottom">
+        <div class="area">
+            <p class="font6"><i>Hilight Brands</i></p>
+            <p class="font7">주식회사 하이라이트브랜즈</p>
+            <ul>
+                <li>CEO.Jun Kwon Lee</li>
+                <li>Business License No. 788-81-01239 [사업자정보확인]</li>
+                <li>Mail Order Business Registration. No. 2019-성남분당B-0523</li>
+                <li>Address. 801 PDC Building A-Dong 8F, 242, Pangyo-ro, Bundang-gu, Seongnam-si,
+                Gyeonggi, Korea</li>
+            </ul>
+            <br>
+            <ul>
+                <li>Hilight Brands is a division within Modern Works.</li>
+                <li>The Kodak trademark, logo and trade dress are</li>
+                <li>used by Modern Works under license from Eastman Kodak Company.</li>
+            </ul>
+            <br>
+            ⓒ 2023 Hilight Brands.
+        </div>
+        <div class="area">
+            <ul>
+                <li>Term of Use</li>
+                <li>Privacy Policy</li>
+                <li>Order Tracking</li>
+                <li>Notice</li>
+                <li>Q&A</li>
+                <li>인재채용</li>
+            </ul>
+            <img src="kakao.png">
+            <img src="facebook.png">
+            <img src="instargram.png">
+        </div>
+        <div class="area">
+            <ul>
+                <li>CS Center</li>
+                <li>Mon - Fri (10:00 - 17:00)</li>
+                <li>문의전용 : support@hibs.co.kr</li>
+                <li>마케팅제휴 : marketing@hibs.co.kr</li>
+            </ul>
+        </div>
+        <div class="area">
+            <ul>
+                <li>반품 & 교환</li>
+                <li>반품배송지 : 경기도 안산시 단원구 시화호수로 835 로지즈밸리 3층</li>
+            </ul>
+            <br>
+            <ul>
+                <li>계좌안내</li>
+                <li>계좌번호 : 하나은행 439-910024-02604</li>
+                <li>예금주 : 주식회사 하이라이트브랜즈</li>
+            </ul>
+            <br>
+            <ul>
+                <li>매장안내</li>
+                <li>전국 매장정보</li>
+                <li>대리점 입점 문의 : hyoungwon.son@hibs.co.kr(010-2515-1632)</li>
+            </ul>
+        </div>
+    </div>
+</body>
