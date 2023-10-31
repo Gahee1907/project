@@ -12,40 +12,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     
     <header>
-        <div class="left">
-            <div class="name">Lee.GaHee</div>
+        <div class="inner">
+            <p class="name">Lee.GaHee</p>
             <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Language</a></li>
                 <li><a href="#">Profil</a></li>
-                <li><a href="#">Study</a></li>
-                <li><a href="kodak.html">Banchmarking</a></li>
-            </ul>  
-        </div>
-        <div class="right">
-            <div class="main_slider">
-                <div><img src="slide1.jpeg"></div>
-                <div><img src="slide2.jpeg"></div>
-                <div><img src="slide3.jpeg"></div>
-            </div>
-        </div>
+                <li><a href="#">Portfolio</a></li>
+            </ul>
+        </div> 
     </header>
-
+    <div class="main">
+        <div class="slider-for">
+            <div>
+                <h3>Welcome "Lee.GaHee"</h3>
+            </div>
+          <div><h3>Language</h3></div>
+          <div><h3>Profil</h3></div>
+          <div><h3>Portfolio</h3></div>
+        </div>
+        <div class="slider-nav">
+            <div><h4>Welcome</h4></div>
+            <div><h4>Language</h4></div>
+            <div><h4>Profil</h4></div>
+            <div><h4>Portfolio</h4></div>
+        </div>
+      </div>
     <script>
-        $(function(){
-          $('.main_slider').slick({
-            slide: 'div',
-                      infinite : true, 	 
-                      slidesToShow : 1,
-                      slidesToScroll : 1,	
-                      speed : 100,
-                      dots : true,
-                      autoplay : true,
-                      autoplaySpeed : 10000,
-                      pauseOnHover : true,
-                      vertical : false,
-                      dotsClass : "slick-dots", 	
-                      draggable : true
-                  });
-                })
-      </script>
+        $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        intifite: true,
+        asNavFor: '.slider-nav',
+        autoplay: true,
+        speed: 3000
+        });
+        $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: true,
+        focusOnSelect: true,
+        });
 
+        $('a[data-slide]').click(function(e) {
+        e.preventDefault();
+        var slideno = $(this).data('slide');
+        $('.slider-nav').slick('slickGoTo', slideno - 1);
+        });
+    </script>
+
+    <footer>
+        <div class="bottom">
+            <h1>Lee.GaHee</h1>
+            <ul>
+                <li>Manseok-ro 159beon-gil, Jangan-gu, Suwon-si, Gyeonggi-do, Republic of Korea</li>
+                <li>Tel: 010-3901-9410</li>
+                <li>E-mail: rkgml1907@naver.com</li>
+            </ul>
+        </div>
+    </footer>
 </body>
