@@ -14,12 +14,26 @@
     <header>
         <div class="inner">
             <p class="name">Lee.GaHee</p>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Language</a></li>
-                <li><a href="#">Profil</a></li>
-                <li><a href="#">Portfolio</a></li>
-            </ul>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Algorithm</a>
+                        <div class="dropmenu">
+                            <a href="#">Math</a>
+                            <a href="#">Dynamic.P</a>
+                            <a href="#">Graph</a>
+                        </div>
+
+                    </li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="portfolio.html">Portfolio</a>
+                        <div class="dropmenu">
+                            <a href="#">Banchmarking</a>
+                            <a href="#">Practice</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div> 
     </header>
     <div class="main">
@@ -28,14 +42,14 @@
                 <h3>Welcome "Lee.GaHee"</h3>
             </div>
           <div><h3>Language</h3></div>
-          <div><h3>Profil</h3></div>
-          <div><h3>Portfolio</h3></div>
+          <div><h3>Profile</h3></div>
+          <div OnClick="location.href ='portfolio.html'" style="cursor:pointer;"><h3>Portfolio</h3></div>
         </div>
         <div class="slider-nav">
             <div><h4>Welcome</h4></div>
             <div><h4>Language</h4></div>
-            <div><h4>Profil</h4></div>
-            <div><h4>Portfolio</h4></div>
+            <div><h4>Profile</h4></div>
+            <div OnClick="location.href ='portfolio.html'" style="cursor:pointer;"><h4>Portfolio</h4></div>
         </div>
       </div>
     <script>
@@ -47,7 +61,7 @@
         intifite: true,
         asNavFor: '.slider-nav',
         autoplay: true,
-        speed: 3000
+        speed: 2000
         });
         $('.slider-nav').slick({
         slidesToShow: 3,
