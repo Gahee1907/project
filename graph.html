@@ -7,6 +7,13 @@
     </head>
 </html>
 <body>
+    <div><input class="upbtn" type="button" value="Top" onclick="clickme()"></div>
+    <script>
+      function clickme() {
+        window.scrollTo({top:0, left:0, behavior:"smooth"});
+      }
+    </script>
+    
     <header>
         <div class="inner">
             <p class="name">Lee.GaHee</p>
@@ -48,40 +55,42 @@
                 <li><a href="graph.html">Graph</a></li>
             </ul>
             <div class="part">
-                <div class="box">
-                    <a href="#">
-                        <img src="baekjoon.png">
-                        <p>02331</p> 
-                        <h4>반복수열</h4>
-                    </a>
+                <h2 style="color: rgb(133, 79, 38)"><img src="bronze.png"> Bronze</h2>
+                <div class="level">
+                    <div class="box">
+                        <a href="#">
+                            <img src="baekjoon.png">
+                            <h4>순열 사이클</h4>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <img src="baekjoon.png">
+                            <h4>늑대와 양</h4>
+                        </a>
+                    </div>
                 </div>
-                <div class="box">
-                    <a href="#">
-                        <img src="baekjoon.png">
-                        <p>16956</p> 
-                        <h4>늑대와 양</h4>
-                    </a>
-                </div>
-                <div class="box">
-                    <a href="#">
-                        <img src="baekjoon.png">
-                        <p>01260</p> 
-                        <h4>DFS와 BFS</h4>
-                    </a>
-                </div>
-                <div class="box">
-                    <a href="#">
-                        <img src="baekjoon.png">
-                        <p>10451</p> 
-                        <h4>순열 사이클</h4>
-                    </a>
-                </div>
-                <div class="box">
-                    <a href="#">
-                        <img src="baekjoon.png">
-                        <p>04963</p> 
-                        <h4>섬의 개수</h4>
-                    </a>
+
+                <h2 style="color: rgb(10, 44, 181);"><img src="silver.png"> Silver</h2>
+                <div class="level">
+                    <div class="box">
+                        <a href="#">
+                            <img src="baekjoon.png">
+                            <h4>DFS와 BFS</h4>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <img src="baekjoon.png">
+                            <h4>반복수열</h4>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <img src="baekjoon.png">
+                            <h4>섬의 개수</h4>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
