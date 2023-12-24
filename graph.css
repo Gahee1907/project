@@ -123,11 +123,12 @@ section .background h1{
     margin: 20px 0 0 12px;
 }
 .main .inner .part h2 img {
-    width: 30px; height: 25px;
+    width: 30px; height: 30px;
 }
 .main .inner .part a:hover{
     color: white;
 }
+h2, img { vertical-align: middle;}
 
 
 .main .inner .part .box {

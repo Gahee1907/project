@@ -71,18 +71,19 @@ section {
     background-size: contain;
 }
 section .background {
-    width: 500px;
+    width: 700px;
     height: 310px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section .background h1{
     color: white;
-    font-size: 43px;
-    text-align: center;
-    padding: 2%;
-    line-height: 290px;
+    font-size: 45px;
     text-shadow: 3px 3px 3px black;
+    text-align: center;
 }
 
 
@@ -124,11 +125,14 @@ section .background h1{
     margin: 20px 0 0 12px;
 }
 .main .inner .part h2 img {
-    width: 30px; height: 25px;
+    width: 30px; height: 30px;
 }
 .main .inner .part a:hover{
     color: white;
 }
+h2, img { vertical-align: middle;}
+
+
 .main .inner .part .box {
     width: 200px; height: 140px;
     background-color: white;
