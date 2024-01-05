@@ -64,6 +64,19 @@
         <div class="link">
             <a href="https://www.acmicpc.net/problem/9461">출처: https://www.acmicpc.net/problem/9461</a>
         </div>
+
+        <div class="about">
+            처음에 딱 'P(1)부터 P(10)까지 첫 10개 숫자는 1, 1, 1, 2, 2, 3, 4, 5, 7, 9이다' 라는 문제만 봤을 때는 규칙성 찾기가 어려워 보였다.<br>
+            <img style="width:450px; height: 250px; margin: 3px 150px;" src="파도반img.PNG"><br>
+            하지만 그림을 잘 보면 d[1]=1, d[2]=1, d[3]=1, d[4]=2, d[5]=2, d[6]=3, d[7]=4, d[8]=5, d[9]=7, d[10]=9, d[11]=12 일 때,
+             d[11]의 12는 d[10]과 d[6]이 더해졌을 때의 값이 나온다.<br>
+            d[6] =  d[1] + d[5]<br>
+            d[7] =  d[2] + d[6]<br>
+            d[8] =  d[3] + d[7]<br>
+            d[9] =  d[4] + d[8]<br>
+            그러므로 <strong style="background-color: yellow;">점화식은 d[n] = d[n-5] + d[n-1]</strong>이다. (Bottom-Up방식 사용)
+           
+        </div>
     </div>
 
       <script>

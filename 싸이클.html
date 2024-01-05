@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>1065번 한수</title>
+        <title>2526번 싸이클</title>
         <link rel="stylesheet" type="text/css" href="피보나치수.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     </head>
@@ -41,16 +41,16 @@
         </div> 
     </header>
 
-    <section style="background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url(math.jpg);">
+    <section style="background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url(im.jpg);">
         <div class="background">
-            <h1>한수</h1>
+            <h1>싸이클</h1>
         </div> 
     </section>
 
     <div class="container">
         <div class="title">
-            <a href="math.html"><img src="back.png"></a><h2>1065번 한수</h2>
-            <h4>#수학 #브루트포스 알고리즘</h4>
+            <a href="imple.html"><img src="back.png"></a><h2>2526번 싸이클</h2>
+            <h4>#구현</h4>
         </div>
    
         <ul class="tabs">
@@ -61,33 +61,36 @@
         </ul>
        
         <div id="tab-1" class="tab-content current">
-            <script src="https://gist.github.com/Gahee1907/313460a6ef167a1c15a1753fff1fb7a1.js"></script>
+            <script src="https://gist.github.com/Gahee1907/0b990e53913fe8979efb8fe04ea1dcc0.js"></script>
         </div>
         
         <div id="tab-2" class="tab-content">
-            <script src="https://gist.github.com/Gahee1907/b4ff615e8bf85dbaad8fb913fb80459f.js"></script>
+            <script src="https://gist.github.com/Gahee1907/d69a8376f19babafc9c84567f833d751.js"></script>
         </div>
         
         <div id="tab-3" class="tab-content">
-            <script src="https://gist.github.com/Gahee1907/25e73a831f858e4156862bfa9e96ecc9.js"></script>
+            <script src="https://gist.github.com/Gahee1907/a6302ebbdde44d380ee51367a81092b9.js"></script>
          </div>
 
          <div id="tab-4" class="tab-content">
-            <script src="https://gist.github.com/Gahee1907/e69dfcfb84c6aecefa8eaf967791e68a.js"></script>
+            <script src="https://gist.github.com/Gahee1907/3f861c90f3d4e0df4b970e12feb21a60.js"></script>
          </div>
 
          <div class="link">
-            <a href="https://www.acmicpc.net/problem/1065">출처: https://www.acmicpc.net/problem/1065</a>
+            <a href="https://www.acmicpc.net/problem/2526">출처: https://www.acmicpc.net/problem/2526</a>
         </div>
 
         <div class="about">
-            등차수열은 연속된 두 개의 수의 차이가 일정한 수열이다.<br>
-            N이 주어졌을 때, 1보다 크거나 같고, N보다 작거나 같은 한수의 개수를 출력하는 문제이다.<br>
-            <br>각 자리수의 차이값이 같은 경우가 한수이다.<br>
-            두 자리수 이하는 등차수열인지 판단할 수 없기 때문에 한수로 간주한다.
-
+            N = 67, P = 31인 경우, 처음 출력되는 수는 <strong style="background-color: yellow;">67</strong>이고,<br>
+            두 번째로 출력되는 수는 67×67 = 4489를 31로 나눈 나머지 <strong style="background-color: yellow;">25</strong>이다.<br>
+            다음에는 25×67 = 1675를 31로 나눈 나머지 <strong style="background-color: yellow;">1</strong>,
+            다음에는 1×67 = 67을 31로 나눈 나머지<strong style="background-color: yellow;">5</strong> 가 차례대로 출력된다.<br>
+            다음에는 5×67 = 335를 31로 나눈 나머지 <strong style="background-color: yellow;">25</strong>가 출력된다.<br>
+            <img src="사이클.PNG"><br>
+            num으로 계산된 값을 arr에 없으면 추가하고, 같은 수가 나오면 break한다. <br>
+            이 과정으로 반복되는 수들의 개수를 구할 수 있다.
         </div>
-       
+
       </div>
 
       <script>

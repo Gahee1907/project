@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>1065번 한수</title>
+        <title>02581번 소수</title>
         <link rel="stylesheet" type="text/css" href="피보나치수.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     </head>
@@ -43,16 +43,16 @@
 
     <section style="background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url(math.jpg);">
         <div class="background">
-            <h1>한수</h1>
+            <h1>소수</h1>
         </div> 
     </section>
 
     <div class="container">
         <div class="title">
-            <a href="math.html"><img src="back.png"></a><h2>1065번 한수</h2>
-            <h4>#수학 #브루트포스 알고리즘</h4>
+            <a href="math.html"><img src="back.png"></a><h2>2581번 소수</h2>
+            <h4>#수학 #정수론 #소수 판정</h4>
         </div>
-   
+     
         <ul class="tabs">
           <li class="tab-link current" data-tab="tab-1"><img src="python-logo.png"><br>Python</li>
           <li class="tab-link" data-tab="tab-2"><img src="java-logo-1.png"><br>Java</li>
@@ -61,31 +61,30 @@
         </ul>
        
         <div id="tab-1" class="tab-content current">
-            <script src="https://gist.github.com/Gahee1907/313460a6ef167a1c15a1753fff1fb7a1.js"></script>
+            <script src="https://gist.github.com/Gahee1907/e2adcf88b46be00388a2d603c1cf7e28.js"></script>
         </div>
         
         <div id="tab-2" class="tab-content">
-            <script src="https://gist.github.com/Gahee1907/b4ff615e8bf85dbaad8fb913fb80459f.js"></script>
+            <script src="https://gist.github.com/Gahee1907/63b00ae3a27ebdc0974f2ad52cd0bf34.js"></script>
         </div>
         
         <div id="tab-3" class="tab-content">
-            <script src="https://gist.github.com/Gahee1907/25e73a831f858e4156862bfa9e96ecc9.js"></script>
+            <script src="https://gist.github.com/Gahee1907/0bd11577590bca23d0a8ac65f6458dd6.js"></script>
          </div>
 
          <div id="tab-4" class="tab-content">
-            <script src="https://gist.github.com/Gahee1907/e69dfcfb84c6aecefa8eaf967791e68a.js"></script>
+            <script src="https://gist.github.com/Gahee1907/7a7a8318d24385da779865cff5c64e77.js"></script>
          </div>
 
          <div class="link">
-            <a href="https://www.acmicpc.net/problem/1065">출처: https://www.acmicpc.net/problem/1065</a>
+            <a href="https://www.acmicpc.net/problem/2581">출처: https://www.acmicpc.net/problem/2581</a>
         </div>
 
         <div class="about">
-            등차수열은 연속된 두 개의 수의 차이가 일정한 수열이다.<br>
-            N이 주어졌을 때, 1보다 크거나 같고, N보다 작거나 같은 한수의 개수를 출력하는 문제이다.<br>
-            <br>각 자리수의 차이값이 같은 경우가 한수이다.<br>
-            두 자리수 이하는 등차수열인지 판단할 수 없기 때문에 한수로 간주한다.
-
+            M과 N이 주어질 때 M이상 N이하의 자연수 중 소수인 것을 모두 골라 이들 소수의 합과 최솟값을 찾는 문제이다.<br>
+            <br><strong style="background-color: yellow;">소수는 1과 자기 자신을 약수로 가지는 수</strong>이다.<br>
+            i와 j가 같을때, 자기 자신을 약수로 가지는 상황이다. 만약 i와 j가 같다면 소수로 판단해서 sum에 합산한다.<br>
+            i와 j의 몫이 '0'이라면 반복문을 빠져나오고, 소수가 없다면 '-1'을 출력시켜주었다.
         </div>
        
       </div>

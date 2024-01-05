@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>1065번 한수</title>
+        <title>4673번 셀프 넘버</title>
         <link rel="stylesheet" type="text/css" href="피보나치수.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     </head>
@@ -41,18 +41,18 @@
         </div> 
     </header>
 
-    <section style="background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url(math.jpg);">
+    <section style="background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url(im.jpg);">
         <div class="background">
-            <h1>한수</h1>
+            <h1>셀프 넘버</h1>
         </div> 
     </section>
 
     <div class="container">
         <div class="title">
-            <a href="math.html"><img src="back.png"></a><h2>1065번 한수</h2>
-            <h4>#수학 #브루트포스 알고리즘</h4>
+            <a href="imple.html"><img src="back.png"></a><h2>4673번 셀프 넘버</h2>
+            <h4>#수학 #구현 #브루트포스 알고리즘</h4>
         </div>
-   
+       
         <ul class="tabs">
           <li class="tab-link current" data-tab="tab-1"><img src="python-logo.png"><br>Python</li>
           <li class="tab-link" data-tab="tab-2"><img src="java-logo-1.png"><br>Java</li>
@@ -61,31 +61,31 @@
         </ul>
        
         <div id="tab-1" class="tab-content current">
-            <script src="https://gist.github.com/Gahee1907/313460a6ef167a1c15a1753fff1fb7a1.js"></script>
+            <script src="https://gist.github.com/Gahee1907/e9bb1d04a2be6f3bdeb4e781cded2edf.js"></script>
         </div>
         
         <div id="tab-2" class="tab-content">
-            <script src="https://gist.github.com/Gahee1907/b4ff615e8bf85dbaad8fb913fb80459f.js"></script>
+            <script src="https://gist.github.com/Gahee1907/6a08d4dbf66dfe2652ae55c14fd66ea2.js"></script>
         </div>
         
         <div id="tab-3" class="tab-content">
-            <script src="https://gist.github.com/Gahee1907/25e73a831f858e4156862bfa9e96ecc9.js"></script>
+            <script src="https://gist.github.com/Gahee1907/74927ac72aa5b647799a234718772101.js"></script>
          </div>
 
          <div id="tab-4" class="tab-content">
-            <script src="https://gist.github.com/Gahee1907/e69dfcfb84c6aecefa8eaf967791e68a.js"></script>
+            <script src="https://gist.github.com/Gahee1907/1fd8362b8b2313b8cb19d76894f5b7d0.js"></script>
          </div>
 
-         <div class="link">
-            <a href="https://www.acmicpc.net/problem/1065">출처: https://www.acmicpc.net/problem/1065</a>
+        <div class="link">
+            <a href="https://www.acmicpc.net/problem/4673">출처: https://www.acmicpc.net/problem/4673</a>
         </div>
 
         <div class="about">
-            등차수열은 연속된 두 개의 수의 차이가 일정한 수열이다.<br>
-            N이 주어졌을 때, 1보다 크거나 같고, N보다 작거나 같은 한수의 개수를 출력하는 문제이다.<br>
-            <br>각 자리수의 차이값이 같은 경우가 한수이다.<br>
-            두 자리수 이하는 등차수열인지 판단할 수 없기 때문에 한수로 간주한다.
-
+            d(75) = 75+7+5 = 87이다.<br>
+            예를 들어, 33으로 시작한다면 다음 수는 33 + 3 + 3 = 39이고, 그 다음 수는 39 + 3 + 9 = 51,<br> 다음 수는 51 + 5 + 1 = 57이다.<br>
+            33은 39의 생성자이고, 39는 51의 생성자, 51은 57의 생성자이다. <strong>생성자가 없는 숫자를 셀프 넘버</strong>라고 한다.<br>
+            <br>각 자리수를 분리해 셀프넘버를 만들어 주고, b에 담아준다.<br>
+            그리고 a에서 셀프 넘버인 b를 빼준 숫자들을 num이라 한다.<br> num을 sorted를 통해 정리해 셀프넘버가 아닌 수들을 나열해 주었다.
         </div>
        
       </div>

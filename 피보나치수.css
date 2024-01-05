@@ -91,7 +91,7 @@ section .background h1{
 }
 
 .title {
-    width: 810px;
+    width: 820px;
     margin: 0 auto;
 }
 .title h2 {
@@ -109,18 +109,26 @@ section .background h1{
 h2, img { vertical-align: middle;}
 
 .link {
-    width: 810px; height: 36px;
+    width: 820px; height: 36px;
     margin: 0 auto; padding: 4px;
-    background-color: #ededed;
+    background-color: black;
     border-radius: 10px;
     text-align: center;
 }
 .link a {
-    color: blue;
+    color: rgb(255, 255, 255);
     font-size: 16px;
 }
 .link a:hover {
-    color: rgb(78, 78, 234);
+    color: yellow;
+    text-decoration-line: underline;
+}
+
+.about {
+    width: 820px;
+    margin: 30px auto;
+    font-family: '고딕';
+    line-height: 32px;
 }
 
 

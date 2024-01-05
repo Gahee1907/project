@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>1065번 한수</title>
+        <title>1977번 완전제곱수</title>
         <link rel="stylesheet" type="text/css" href="피보나치수.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     </head>
@@ -43,16 +43,16 @@
 
     <section style="background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url(math.jpg);">
         <div class="background">
-            <h1>한수</h1>
+            <h1>완전제곱수</h1>
         </div> 
     </section>
 
     <div class="container">
         <div class="title">
-            <a href="math.html"><img src="back.png"></a><h2>1065번 한수</h2>
-            <h4>#수학 #브루트포스 알고리즘</h4>
+            <a href="math.html"><img src="back.png"></a><h2>1977번 완전제곱수</h2>
+            <h4>#수학 #구현 #브루트포스 알고리즘</h4>
         </div>
-   
+
         <ul class="tabs">
           <li class="tab-link current" data-tab="tab-1"><img src="python-logo.png"><br>Python</li>
           <li class="tab-link" data-tab="tab-2"><img src="java-logo-1.png"><br>Java</li>
@@ -61,31 +61,29 @@
         </ul>
        
         <div id="tab-1" class="tab-content current">
-            <script src="https://gist.github.com/Gahee1907/313460a6ef167a1c15a1753fff1fb7a1.js"></script>
+            <script src="https://gist.github.com/Gahee1907/e93d1ce4e71f198386f63872f99b3e1b.js"></script>
         </div>
         
         <div id="tab-2" class="tab-content">
-            <script src="https://gist.github.com/Gahee1907/b4ff615e8bf85dbaad8fb913fb80459f.js"></script>
+            <script src="https://gist.github.com/Gahee1907/82b8de9e14618829601b548c276ee2f1.js"></script>
         </div>
         
         <div id="tab-3" class="tab-content">
-            <script src="https://gist.github.com/Gahee1907/25e73a831f858e4156862bfa9e96ecc9.js"></script>
+            <script src="https://gist.github.com/Gahee1907/012af0d5a4a79f70bd0b70147517f390.js"></script>
          </div>
 
          <div id="tab-4" class="tab-content">
-            <script src="https://gist.github.com/Gahee1907/e69dfcfb84c6aecefa8eaf967791e68a.js"></script>
+            <script src="https://gist.github.com/Gahee1907/b7a7ad9792e4726e2bc6fb04cc9f937b.js"></script>
          </div>
 
-         <div class="link">
-            <a href="https://www.acmicpc.net/problem/1065">출처: https://www.acmicpc.net/problem/1065</a>
+        <div class="link">
+            <a href="https://www.acmicpc.net/problem/1977">출처: https://www.acmicpc.net/problem/1977</a>
         </div>
 
         <div class="about">
-            등차수열은 연속된 두 개의 수의 차이가 일정한 수열이다.<br>
-            N이 주어졌을 때, 1보다 크거나 같고, N보다 작거나 같은 한수의 개수를 출력하는 문제이다.<br>
-            <br>각 자리수의 차이값이 같은 경우가 한수이다.<br>
-            두 자리수 이하는 등차수열인지 판단할 수 없기 때문에 한수로 간주한다.
-
+            M과 N이 주어질 때, <strong>( M <= X <= N )</strong> 의 자연수 중에서 완전제곱수인 것들의 합과 최솟값을 구해야한다.<br>
+            <br>주어지는 수가 10,000이하이기 때문에 최대 100까지만 확인하면 된다.<br>
+            M과 N사이에서 완전제곱값을 찾은 후 합산하고, min에 갱신된 최솟값을 출력했다.
         </div>
        
       </div>
